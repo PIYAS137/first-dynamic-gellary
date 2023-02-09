@@ -1,0 +1,93 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+    background:black;
+    color:white;
+}
+select{
+    display:block;
+    margin:auto;
+    border:none;
+    padding:.3em;
+    background:pink;
+    font-weight:bold;
+    letter-spacing:1px;
+    border-radius:10px;
+}
+header{
+    padding:1.5em;
+}
+form{
+    margin-top:1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    letter-spacing: 1px;
+    font-size:2rem;
+    font-family: sans-serif;
+    color:gray;
+    font-weight: bold;
+    display:block;
+    text-align: center;
+    margin-bottom:.3em;
+}
+label span{
+    color:red;
+    font-weight:normal!important;
+}
+form input{
+    width:20%;
+    font-size: 1.125rem;
+    padding:.4em .4em;
+    border:none;
+    border-radius: 100px;
+    color:hotpink;
+    background-color:#cecece!important;
+}
+button{
+    background:transparent;
+    border:none;
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+.love{
+    max-width: 100%;
+    border-radius:10px;
+    margin:.5em 0em;
+}
+i{
+    font-size:1.8rem;
+    color:#00d1d3;
+    position: sticky;
+    bottom: .7rem;
+    left: .7em;
+}
+@media only screen and (max-width:480px){
+    form{flex-direction: row;
+        justify-content:space-around!important;
+        align-items:center;
+        margin-top: 1em;
+    }
+    form input{
+        width:80%;
+        margin:0em;
+    }
+}
+footer{
+    text-align:center;
+    color:#00d1d3;
+    font-family:cursive;
+    letter-spacing:-1px;
+    font-size:.8rem;
+    padding:1em;
+}
+footer a{
+    color:#00d1d3;
+}
